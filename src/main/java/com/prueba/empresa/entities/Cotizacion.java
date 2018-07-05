@@ -7,6 +7,8 @@ public class Cotizacion {
 	private float montoTotal;
 	private String tasaInteres;
 	
+	
+	
 	public String getNombre() {
 		return nombre;
 	}

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.prueba.empresa.entities.Socio;
 
-@Repository
+
 public interface SocioRepository extends CrudRepository<Socio, Long>{
 
 	@Query(value = "SELECT * FROM socios "

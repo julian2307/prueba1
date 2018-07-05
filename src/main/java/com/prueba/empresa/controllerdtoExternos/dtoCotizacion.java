@@ -18,6 +18,10 @@ public class dtoCotizacion {
 	@XmlElement
 	private String tasaInteres;
 	
+	public dtoCotizacion() {
+		
+		
+	}
 	
 	public String getNombre() {
 		return nombre;

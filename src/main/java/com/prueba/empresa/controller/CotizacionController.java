@@ -25,9 +25,13 @@ private static Logger logger = (Logger) LogManager.getLogger(CotizacionControlle
 	@GetMapping("/calcular")
 	public Cotizacion getCotizacion(@RequestParam("valor")String valor) {
 		Cotizacion dtoCotizacion= null;
-		
+		try {
 		dtoCotizacion = Cotizacionservice.Cotizar(Float.parseFloat(valor));
-		
+		}
+		catch(NumberFormatException e) {
+			logger.info("debe ser un numero");
+			
+		}
 		return dtoCotizacion;
 	}
 

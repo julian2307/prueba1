@@ -5,6 +5,7 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement (name = "socio")
@@ -14,12 +15,12 @@ public class dtoSocio implements Serializable{
 	
 	private static final long serialVersionUID = 01L;
 	@XmlAttribute
-	private Long id;
-	@XmlAttribute
+	private Long idsocio;
+	@XmlElement
 	private String nombre;
-	@XmlAttribute
+	@XmlElement
 	private float tasaInteres;
-	@XmlAttribute
+	@XmlElement
 	private float montoMaximo;
 	
 	public dtoSocio() {}
@@ -31,12 +32,14 @@ public class dtoSocio implements Serializable{
 		this.montoMaximo = montoMaximo;
 	}
 
-	public Long getId() {
-		return id;
+
+
+	public Long getIdsocio() {
+		return idsocio;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setIdsocio(Long idsocio) {
+		this.idsocio = idsocio;
 	}
 
 	public String getNombre() {

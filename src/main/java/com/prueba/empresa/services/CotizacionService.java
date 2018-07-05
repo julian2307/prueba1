@@ -10,7 +10,7 @@ import com.prueba.empresa.entities.Socio;
 import com.prueba.empresa.exception.ExceptionSocio;
 import com.prueba.empresa.repository.SocioRepository;
 
-@Service("CotizacionService")
+@Service
 public class CotizacionService {
 
 	@Autowired
